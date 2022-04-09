@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.scss">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <script src="index.js"></script>
 </head>
 <body>
-
+<section class="banner">
+    <header class="banner__header">
+        <div class="banner__header__image">
+            <img src="../assets/icon.svg" alt="icon">
+        </div>
+        <div class="banner__header__nav">
+            <a href="">
+                Главная
+            </a>
+            <a href="">
+                Лечение
+            </a>
+            <a href="">
+                О нас
+            </a>
+            <a href="">
+                Контакты
+            </a>
+        </div>
+        <button class="banner__header__button">
+            Забронировать номер
+        </button>
+    </header>
+    <div class="banner__title">
+        Добро пожаловать
+        в Шипасу!
+    </div>
+    <form action="">
+        <label for="checkin">
+        </label>
+        <input type="date" id="checkin" name="Дата заезда"
+               value="Дата заезда" placeholder="Дата заезда"
+               min="" max="" required>
+        <label for="checkout">
+        </label>
+        <input type="date" id="checkout" name="Дата заезда"
+               value="Дата заезда" placeholder="Дата выезда"
+               min="today" max="" required>
+        <label for="guests">
+        </label>
+        <input name="guests" placeholder="Гости" type="number" id="guests" step="1" min="1" required>
+        <button>
+            Забронировать
+        </button>
+    </form>
+    <div class="banner__circle">
+        <img src="../assets/arrow.svg" alt="pic">
+    </div>
+</section>
 </body>
 </html>
