@@ -496,6 +496,156 @@ body .gallery__carousel__inner {
   max-width: 1700px;
 }
 
+body .contact {
+  box-sizing: border-box;
+  max-width: 1920px;
+  width: 100%;
+  background-color: #fff8f6;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 100px 0 0 100px;
+  display: flex;
+}
+
+body .contact__block {
+  padding: 0 20px;
+}
+
+body .contact__block img {
+  max-width: 750px;
+  height: 600px;
+}
+
+body .contact__block div {
+  width: 550px;
+  height: 450px;
+  z-index: 1;
+  box-sizing: border-box;
+  background-color: #ffe5cf;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 50px;
+  display: flex;
+  position: relative;
+  top: -350px;
+  left: 550px;
+}
+
+body .contact__block div h5 {
+  font-family: Playfair Display, serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+body .contact__block div p {
+  font-family: Raleway, serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+body .contact__info {
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+body .contact__info h2 {
+  font-family: Playfair Display, serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 85px;
+}
+
+body .contact__info p {
+  margin-top: 20px;
+  font-family: Raleway, serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+body .footer {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 442px;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: #2a2a2a;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+body .footer__media {
+  display: flex;
+}
+
+body .footer__media__main {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 60px;
+  display: flex;
+}
+
+body .footer__media__main img {
+  max-width: 232px;
+  margin-bottom: 30px;
+}
+
+body .footer__media__main a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+body .footer__media__address {
+  flex-direction: column;
+  margin: 60px;
+  display: flex;
+}
+
+body .footer__media__address h5 {
+  margin-bottom: 30px;
+  font-family: Playfair Display, serif;
+  font-size: 24px;
+}
+
+body .footer__media__address p {
+  max-width: 250px;
+}
+
+body .footer__media__contact {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 60px;
+  display: flex;
+}
+
+body .footer__media__contact h5 {
+  margin-bottom: 30px;
+  font-family: Playfair Display, serif;
+  font-size: 24px;
+}
+
+body .footer__media__subscribe {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 60px;
+  display: flex;
+}
+
+body .footer__media__subscribe h5 {
+  margin-bottom: 30px;
+  font-family: Playfair Display, serif;
+  font-size: 24px;
+}
+
+body .footer__end {
+  color: #707070;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media screen and (min-width: 1440px) {
   .banner__header__burger, .banner__header__burger span, .banner__header__mobile {
     display: none;
@@ -529,14 +679,64 @@ body .gallery__carousel__inner {
     margin-left: 10px;
   }
 
-  body .room__block__info__text p {
-    font-family: Raleway, serif;
-    font-size: 16px;
-    line-height: 16px;
-  }
-
   body .room__block__info__text p b {
     font-size: 1.5em;
+  }
+
+  body .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  body .contact__block {
+    padding: 0 20px;
+  }
+
+  body .contact__block img {
+    max-width: 550px;
+    height: 450px;
+  }
+
+  body .contact__block div {
+    width: 500px;
+    height: 450px;
+    top: -180px;
+    left: 120px;
+  }
+
+  body .contact__block div h5 {
+    font-family: Playfair Display, serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  body .contact__block div p {
+    font-family: Raleway, serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  body .contact__info {
+    max-width: 800px;
+    margin: 10px 0 10px 30px;
+  }
+
+  body .contact__info h2 {
+    text-align: center;
+    font-family: Playfair Display, serif;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 85px;
+  }
+
+  body .contact__info p {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Raleway, serif;
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 
@@ -597,6 +797,58 @@ body .gallery__carousel__inner {
 
   body .room__block__info__text p b {
     font-size: 1.5em;
+  }
+
+  body .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  body .contact__block {
+    padding: 0;
+  }
+
+  body .contact__block img {
+    max-width: 270px;
+    height: 200px;
+  }
+
+  body .contact__block div {
+    width: 250px;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 0 32px;
+    top: -80px;
+    left: 30px;
+  }
+
+  body .contact__block div h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  body .contact__block div p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  body .contact__info {
+    max-width: 800px;
+    margin: 20px;
+  }
+
+  body .contact__info h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 53px;
+  }
+
+  body .contact__info p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 
@@ -921,6 +1173,64 @@ body .gallery__carousel__inner {
 
   body .entertainment__img img {
     max-width: 320px;
+  }
+
+  body .footer__media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body .footer__media__main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+  }
+
+  body .footer__media__main img {
+    margin-bottom: 10px;
+  }
+
+  body .footer__media__main a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  body .footer__media__address {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    display: flex;
+  }
+
+  body .footer__media__address h5 {
+    margin-bottom: 10px;
+  }
+
+  body .footer__media__address p {
+    max-width: 250px;
+    text-align: center;
+  }
+
+  body .footer__media__contact {
+    align-items: center;
+    margin: 0;
+  }
+
+  body .footer__media__contact h5 {
+    margin-bottom: 10px;
+  }
+
+  body .footer__media__subscribe {
+    align-items: center;
+    margin: 0;
+  }
+
+  body .footer__media__subscribe h5 {
+    margin-bottom: 10px;
   }
 }
 
