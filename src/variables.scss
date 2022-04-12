@@ -1,0 +1,21 @@
+$white: #FFFFFF;
+$brown: #E1963C;
+$grey: rgba(200, 200, 200, 0.5);
+$black: #000000;
+$beige: #FFF8F6;
+$darkgrey: #707070;
+$title: #010101;
+$contact: #FFE5CF;
+$darkbrown: rgba(225, 150, 60, 0.1);
+
+@mixin title {
+  font-family: Playfair Display, serif;
+  font-size: 64px;
+  line-height: 85px;
+}
+
+@mixin text {
+  font-family: Playfair Display, serif;
+  font-size: 18px;
+  line-height: 21px;
+}
