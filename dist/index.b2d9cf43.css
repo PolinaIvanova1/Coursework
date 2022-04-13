@@ -36,6 +36,11 @@ body .banner__header__nav a {
   font-weight: bold;
   line-height: 21px;
   text-decoration: none;
+  transition: all 1s;
+}
+
+body .banner__header__mobile {
+  max-width: 300px;
 }
 
 body .banner__header__burger {
@@ -55,6 +60,7 @@ body .banner__header__reservation {
   font-family: Raleway, serif;
   font-size: 18px;
   line-height: 21px;
+  transition: all 1s;
 }
 
 body .banner__title {
@@ -67,6 +73,7 @@ body .banner__title {
   font-size: 100px;
   font-weight: bold;
   line-height: 133px;
+  animation: color-change 10s infinite;
 }
 
 body .banner__form {
@@ -147,6 +154,7 @@ body .banner__form__reservation {
   font-family: Raleway, serif;
   font-size: 18px;
   line-height: 21px;
+  transition: all 1s;
 }
 
 body .banner__circle {
@@ -162,6 +170,7 @@ body .banner__circle {
   align-self: center;
   align-items: center;
   margin-top: 260px;
+  transition: all 1s;
   display: flex;
   position: relative;
 }
@@ -233,6 +242,7 @@ body .offer {
 
 body .offer__title {
   color: #010101;
+  margin-bottom: 70px;
   font-family: Playfair Display, serif;
   font-size: 64px;
   font-weight: bold;
@@ -250,6 +260,7 @@ body .offer__block__content {
   background-color: #fff;
   flex-direction: column;
   margin: 10px;
+  transition: all 1s;
   display: flex;
   box-shadow: 1px 0 10px #c8c8c880;
 }
@@ -287,13 +298,15 @@ body .health {
 body .health__content__procedure {
   max-width: 546px;
   z-index: 1;
-  border-radius: 30% 30% 0 0;
+  border-radius: 50% 50% 0 0;
+  transition: all 1s;
   position: relative;
   left: 150px;
 }
 
 body .health__content__massage {
   max-width: 546px;
+  transition: all 1s;
   position: relative;
   top: -250px;
   left: 470px;
@@ -304,6 +317,7 @@ body .health__info {
   max-width: 1100px;
   background-color: #e1963c1a;
   padding: 70px 150px 150px 250px;
+  transition: all 1s;
 }
 
 body .health__info h2 {
@@ -312,6 +326,7 @@ body .health__info h2 {
   font-family: Playfair Display, serif;
   font-size: 64px;
   line-height: 85px;
+  transition: all 1s;
   position: relative;
 }
 
@@ -332,6 +347,10 @@ body .health__info div {
   font-weight: bold;
   line-height: 21px;
   display: flex;
+}
+
+body .health__info div img {
+  transition: all 1s;
 }
 
 body .entertainment {
@@ -360,6 +379,7 @@ body .entertainment__block__info {
 
 body .entertainment__block__info img {
   max-width: 465px;
+  transition: all 1s;
 }
 
 body .entertainment__block__info__text {
@@ -387,7 +407,8 @@ body .entertainment__block__info__text div {
 
 body .entertainment__img {
   max-width: 710px;
-  border-radius: 30% 30% 0 0;
+  border-radius: 50% 50% 0 0;
+  transition: all 1s;
 }
 
 body .room {
@@ -513,7 +534,8 @@ body .contact__block {
 
 body .contact__block img {
   max-width: 750px;
-  height: 600px;
+  height: 577px;
+  transition: all 1s;
 }
 
 body .contact__block div {
@@ -525,9 +547,10 @@ body .contact__block div {
   flex-direction: column;
   justify-content: center;
   padding: 5px 50px;
+  transition: all 1s;
   display: flex;
   position: relative;
-  top: -350px;
+  top: -300px;
   left: 550px;
 }
 
@@ -536,6 +559,7 @@ body .contact__block div h5 {
   font-size: 32px;
   font-weight: bold;
   line-height: 30px;
+  transition: all 1s;
 }
 
 body .contact__block div p {
@@ -647,7 +671,83 @@ body .footer__end {
 }
 
 @media screen and (min-width: 1440px) {
-  .banner__header__burger, .banner__header__burger span, .banner__header__mobile {
+  body .banner__header__nav__a:hover {
+    text-shadow: 1px 0 10px #fff;
+    color: #000;
+    transform: scale(1.5);
+  }
+
+  body .banner__header__reservation:hover, body .banner__form__reservation:hover {
+    text-shadow: 1px 0 10px #fff;
+    background: #000;
+    font-weight: bold;
+    transform: scale(1.2);
+    box-shadow: 1px 0 50px #000;
+  }
+
+  body .banner__circle:hover {
+    background-color: #000;
+    transform: scale(1.2);
+    box-shadow: 1px 0 50px #fff;
+  }
+
+  body .offer__block__content:hover {
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.2);
+    box-shadow: 1px 0 50px #fff;
+  }
+
+  body .health__content__procedure:hover, body .health__content__massage:hover {
+    box-shadow: 1px 0 50px #000;
+  }
+
+  body .health__info:hover {
+    color: #fff;
+    background-color: #000;
+  }
+
+  body .health__info:hover h2 {
+    color: #fff;
+  }
+
+  body .health__info:hover div img {
+    filter: invert();
+  }
+
+  body .entertainment__block__info img:hover, body .entertainment__img:hover, body .contact__block img:hover {
+    box-shadow: 1px 0 50px #000;
+  }
+
+  body .contact__block div:hover {
+    color: #fff;
+    background-color: #000;
+  }
+
+  body .contact__block div:hover h5 {
+    color: #fff;
+  }
+
+  body .contact__info {
+    max-width: 400px;
+    margin: 10px 0;
+  }
+
+  body .contact__info h2 {
+    font-family: Playfair Display, serif;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 85px;
+  }
+
+  body .contact__info p {
+    margin-top: 20px;
+    font-family: Raleway, serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .banner__header__burger, .banner__header__burger span {
     display: none;
   }
 }
@@ -799,6 +899,16 @@ body .footer__end {
     font-size: 1.5em;
   }
 
+  body .gallery {
+    padding: 0 50px;
+  }
+
+  body .gallery h2 {
+    max-width: 320px;
+    font-size: 40px;
+    line-height: 53px;
+  }
+
   body .contact {
     flex-direction: column;
     align-items: center;
@@ -865,23 +975,6 @@ body .footer__end {
   body .gallery__carousel {
     justify-content: center;
     display: flex;
-  }
-}
-
-@media screen and (max-width: 719px) {
-  body .gallery {
-    padding: 0 50px;
-  }
-
-  body .gallery h2 {
-    max-width: 320px;
-    font-size: 40px;
-    line-height: 53px;
-  }
-
-  body .gallery__carousel__inner {
-    max-width: 600px;
-    height: 240px;
   }
 }
 
@@ -1368,7 +1461,7 @@ body .footer__end {
   width: 100%;
   height: 100%;
   z-index: 3;
-  background: #0dc5c1;
+  background: #000;
   animation: cssAnimation 0s ease-in 5s forwards;
   position: absolute;
   top: 0;
@@ -1405,7 +1498,7 @@ body .footer__end {
   width: 5.2em;
   height: 10.2em;
   transform-origin: 5.2em 5.1em;
-  background: #0dc5c1;
+  background: #000;
   border-radius: 10.2em 0 0 10.2em;
   animation: load2 2s 1.5s infinite;
   top: -.1em;
@@ -1427,7 +1520,7 @@ body .footer__end {
   width: 5.2em;
   height: 10.2em;
   transform-origin: 0 5.1em;
-  background: #0dc5c1;
+  background: #000;
   border-radius: 0 10.2em 10.2em 0;
   animation: load2 2s infinite;
   top: -.1em;
@@ -1441,6 +1534,23 @@ body .footer__end {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #000;
+    text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 .2em #fff;
+  }
+
+  50% {
+    color: #fff;
+    text-shadow: 1px 0 10px #000;
+  }
+
+  100% {
+    color: #000;
+    text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 .2em #fff;
   }
 }
 
